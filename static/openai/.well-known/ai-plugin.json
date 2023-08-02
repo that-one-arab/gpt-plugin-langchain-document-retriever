@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "YourPluginName",
+    "name_for_model": "pluginName",
+    "description_for_human": "Query a list of [YOUR_DOCUMENTS]",
+    "description_for_model": "Query and return a list of [YOUR_DOCUMENTS]. Respond using the template inside the API's response.",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "http://localhost:5000/openapi.yaml"
+    },
+    "logo_url": "http://localhost:5000/logo.png",
+    "contact_email": "test@test.com",
+    "legal_info_url": "http://localhost:5000/legal_info"
+}
+  

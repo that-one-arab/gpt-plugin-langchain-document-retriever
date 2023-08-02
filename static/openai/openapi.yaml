@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: [YOUR_TITLE]
+  description: Allows the user to query a list of [YOUR_DOCUMENTS]. Respond using the template provided.
+  version: 'v1'
+servers:
+  - url: http://localhost:5000
+paths:
+  /api/query:
+    post:
+      operationId: getDocuments
+      summary: Queries a list of [YOUR_DOCUMENTS]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  list:
+                    type: array
+                    description: The list of [YOUR_DOCUMENTS].
+                  template:
+                    type: string
+                    description: This is your template for responding.
